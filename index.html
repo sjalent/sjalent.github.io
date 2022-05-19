@@ -3,66 +3,35 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>smoek wed</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
-	<style type="text/css"> 
-	.container { position:relative; }
-	.scroll1 { left: 0vw ; position: absolute; z-index: 1; } 
-	.scroll2 { left: 0vw ; position: absolute; z-index: 2; }
-	.duck_smonk { height: 13vw; width: 13vw }
-	.boxi { 
-		position: absolute;
-		z-index: 9;
-		opacity:0.5;
-		width:50%;
-		height: 10vw;
-		margin-bottom:25% !important;
-		margin-top:18vw !important;
-		margin-left:25% !important;
-		margin-right:25% !important 
-	}
-	.animated_rainbow_1 {
-		font-size: 4vw;
-		position: absolute;
-		z-index: 10;
-		margin-left: 26%;
-		margin-right: 25%;
-		margin-top: 20vw;
-		text-align: center;
-		font-family: Arial Black, Gadget, sans-serif;
-
-		background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-		-webkit-animation: animatedBackground_a 2s linear infinite alternate;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: #0000;
-		background-clip: text;
-	}
-
-	@keyframes animatedBackground_a {
-		0% { background-position: 0 0 }
-		100% { background-position: -500px 0 }
-	}
-
-	</style>
-	<body style = "background-color: #2a2a2a">
-		<div class="container" align="center" style = "color:whitesmoke; font-size: 82vw;">
-
-			<hr class="boxi" size=4vw color="black">
-			<div class="animated_rainbow_1" >
-				welcome to the duck zone
-			</div>
-			<audio controls autoplay loop> 
-				<source src="./music3.ogg" type="audio/ogg"> 
-			</audio>
-
-			<!-- Background scrolling -->
-
-			<marquee class="scroll1" style="top:3vw" scrolldelay=60 scrollamount=50 direction=right behavior=scroll>
+	<body>
+		<audio controls autoplay loop > 
+			<source src="./music.ogg" type="audio/ogg"> 
+		</audio>
+		<!-- rainbow text -->
+		<div class="welcome-rainbow" >
+			<p style="font-size:3vw">welcome to the</p>
+			<p style="margin-top:-3vw">duck zone</p>
+		</div>
+		<div>
+			<a href='http://duckduckgo.com/'>
+				<button class="button-duck">click here for a fat boof</button>
+			</a>
+		</div>
+		<!-- black squares -->
+		<div>
+			<hr class="box1" color="black"></hr>
+		</div>
+		<!-- Background scrolling -->
+		<div class="duck-background" align="center">
+			<marquee class="scroll1" style="top:2vw;" scrolldelay=60 scrollamount=50 direction=right behavior=scroll>
 				<img class="duck_smonk" src="./img/2.webp" style="opacity:0.7">
 			</marquee>
 			<marquee class="scroll1" style="top:6vw" scrolldelay=20 scrollamount=100 behavior=scroll>
 				<img class="duck_smonk" src="./img/1.webp" style="opacity:0.7">
 			</marquee>
-			<marquee class="scroll1" style="top:9vw" scrolldelay=40 scrollamount=70 direction=right behavior=scroll>
+			<marquee class="scroll1" style="top:9vw" scrolldelay=40 scrollamount=85 direction=right behavior=scroll>
 				<img class="duck_smonk" src="./img/5.webp" style="opacity:0.7">
 			</marquee>
 			<marquee class="scroll2" style="top:12vw" scrolldelay=50 scrollamount=50 direction=right behavior=scroll>
@@ -84,7 +53,7 @@
 				<img class="duck_smonk" src="./img/3.webp" style="opacity:0.75">
 			</marquee>
 			<marquee class="scroll2" style="top:30vw" scrolldelay=20 scrollamount=40 direction=right behavior=scroll>
-				<img class="duck_smonk" src="./img/2.webp" style="opacity:0.75">
+				<img class="duck_smonk" src="./img/6.webp" style="opacity:0.75">
 			</marquee>
 			<marquee class="scroll2" style="top:33vw" scrolldelay=100 scrollamount=60 behavior=scroll>
 				<img class="duck_smonk" src="./img/1.webp" style="opacity:0.75">
@@ -93,7 +62,7 @@
 				<img class="duck_smonk" src="./img/7.webp" style="opacity:0.75">
 			</marquee>
 			<marquee class="scroll2" style="top:39vw" scrolldelay=50 scrollamount=150 direction=left behavior=scroll>
-				<img class="duck_smonk" src="./img/3.webp" style="opacity:0.75">
+				<img class="duck_smonk" src="./img/4.webp" style="opacity:0.75">
 			</marquee>
 		</div>
 	</body>

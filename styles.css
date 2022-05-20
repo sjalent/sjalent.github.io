@@ -1,6 +1,25 @@
-body { 
+.main-body { 
 	background-color: #2a2a2a;
+	color:white;
 	font-family: "Lucida Console", "Courier New", monospace
+}
+.boof-body {
+	height: 100%;
+	background-image: url("img/soldier-boof.webp");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.dead-body {
+	height: 100%;
+	font-family: "Lucida Console", "Courier New", monospace;
+	color:white;
+	background-image: url("img/dead.webp");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .welcome-rainbow {
 	font-size: 4vw;
@@ -28,7 +47,7 @@ body {
 	background-color: #2a2a2a;
 	font-family: "Lucida Console", "Courier New", monospace;
 	padding: 2vw 5vw;
-	margin-left: 25%;
+	margin-left: 24%;
 	margin-right:25%;
 	margin-top:25%;
 	left: 15vw;
@@ -43,7 +62,10 @@ body {
 	background-color: #2b412b;
 }
 .box1 { 
+	background-color: black;
 	position: absolute;
+	width:50%;
+	height: 10vw;
 	margin-left: 25%;
 	margin-right: 25%;
 	margin-top: 13.5%;
@@ -52,6 +74,21 @@ body {
 	opacity:0.5;
 	width:50%;
 	height: 10vw;
+}
+.box12 {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	position: absolute;
+	width:50%;
+	height: 10vw;
+	margin-left: 33%;
+	margin-right: 33%;
+	margin-top: 50%;
+	margin-bottom: 25%;
+	z-index: 9;
+	width:33%;
+	height: 50vw;
+
 }
 .duck-background { 
 	z-index: 3;
@@ -69,3 +106,23 @@ body {
 	z-index: 4;
 }
 .duck_smonk { height: 13vw; width: 13vw }
+
+.box2 { 
+	position: absolute;
+	margin-left: 35%;
+	margin-right: 25%;
+	margin-top: 43vw;
+	margin-bottom: 25%;
+	width:25%;
+	height: 5vw;
+	background-color: rgba(0,0,0,0.5);
+}
+.audio-boof { 
+	opacity:1;
+	z-index:5;
+	position: absolute;
+	margin-left: 20%;
+	margin-right: 25%;
+	margin-top:4%;
+}
+
